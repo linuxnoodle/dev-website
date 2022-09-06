@@ -1,8 +1,30 @@
+@font-face {
+    font-family: "Computer Modern";
+    src: url('https://demonstrandum.net/fonts/cmunss.otf');
+}
+@font-face {
+    font-family: "Computer Modern";
+    src: url('https://demonstrandum.net/fonts/cmunsx.otf');
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Computer Modern";
+    src: url('https://demonstrandum.net/fonts/cmunsi.otf');
+    font-style: italic, oblique;
+}
+@font-face {
+    font-family: "Computer Modern";
+    src: url('https://demonstrandum.net/fonts/cmunbxo.otf');
+    font-weight: bold;
+    font-style: italic, oblique;
+}
+
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: "Computer Modern", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
@@ -13,6 +35,7 @@ a {
 
 * {
   box-sizing: border-box;
+  overflow:  hidden;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,7 +43,7 @@ a {
     color-scheme: dark;
   }
   body {
-    color: white;
-    background: black;
+    color: #cfcfcf;
+    background: #0c0c0f;
   }
 }
