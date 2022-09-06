@@ -61,7 +61,10 @@ const UnitCircle = () => {
         // draw text
         ctx.font = '30px Computer Modern'
         ctx.fillStyle = '#a83232'
-        ctx.fillText('i', ctx.canvas.width/2+ 20, ctx.canvas.height/2 - 260)
+        ctx.fillText('i', ctx.canvas.width/2 - 20, ctx.canvas.height/2 - 260)
+        ctx.fillText('1', ctx.canvas.width/2 + 260, ctx.canvas.height/2 + 30)
+        ctx.fillText('-i', ctx.canvas.width/2 - 30, ctx.canvas.height/2 + 290)
+        ctx.fillText('-1', ctx.canvas.width/2 - 285, ctx.canvas.height/2 + 30)
     }
     useEffect(() => {
         const canvas = canvasRef.current
