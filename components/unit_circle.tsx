@@ -79,7 +79,7 @@ const UnitCircle = () => {
             window.cancelAnimationFrame(animationFrameId)
         }
     });
-    return <canvas ref={canvasRef} z-index={-1}/>
+    return <canvas ref={canvasRef}/>
 }
 
 export default UnitCircle
