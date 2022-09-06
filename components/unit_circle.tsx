@@ -50,12 +50,12 @@ const UnitCircle = () => {
         ctx.lineWidth = 3
         ctx.beginPath()
         ctx.moveTo(ctx.canvas.width/2, ctx.canvas.height/2)
-        ctx.lineTo(ctx.canvas.width/2 + 250 * Math.cos(frameCount * 0.01), ctx.canvas.height/2 + 250 * Math.sin(frameCount * 0.01))
+        ctx.lineTo(ctx.canvas.width/2 + 250 * Math.cos(frameCount * 0.005), ctx.canvas.height/2 + 250 * -Math.sin(frameCount * 0.005))
 
         // end of arrow
-        ctx.lineTo(ctx.canvas.width/2 + 250 * Math.cos(frameCount * 0.01) - 10 * Math.cos(frameCount * 0.01 + Math.PI/2), ctx.canvas.height/2 + 250 * Math.sin(frameCount * 0.01) - 10 * Math.sin(frameCount * 0.01 + Math.PI/2))
-        ctx.moveTo(ctx.canvas.width/2 + 250 * Math.cos(frameCount * 0.01), ctx.canvas.height/2 + 250 * Math.sin(frameCount * 0.01))
-        ctx.lineTo(ctx.canvas.width/2 + 250 * Math.cos(frameCount * 0.01) - 10 * Math.cos(frameCount * 0.01 - Math.PI/2), ctx.canvas.height/2 + 250 * Math.sin(frameCount * 0.01) - 10 * Math.sin(frameCount * 0.01 - Math.PI/2))
+        ctx.lineTo(ctx.canvas.width/2 + 250 * Math.cos(frameCount * 0.005) - 10 * Math.cos(frameCount * 0.005 + Math.PI/2), ctx.canvas.height/2 + 250 * -Math.sin(frameCount * 0.005) - 10 * -Math.sin(frameCount * 0.005 + Math.PI/2))
+        ctx.moveTo(ctx.canvas.width/2 + 250 * Math.cos(frameCount * 0.005), ctx.canvas.height/2 + 250 * -Math.sin(frameCount * 0.005))
+        ctx.lineTo(ctx.canvas.width/2 + 250 * Math.cos(frameCount * 0.005) - 10 * Math.cos(frameCount * 0.005 - Math.PI/2), ctx.canvas.height/2 + 250 * -Math.sin(frameCount * 0.005) - 10 * -Math.sin(frameCount * 0.005 - Math.PI/2))
         ctx.stroke()
 
         // draw text
@@ -65,6 +65,8 @@ const UnitCircle = () => {
         ctx.fillText('1', ctx.canvas.width/2 + 260, ctx.canvas.height/2 + 30)
         ctx.fillText('-i', ctx.canvas.width/2 - 30, ctx.canvas.height/2 + 290)
         ctx.fillText('-1', ctx.canvas.width/2 - 285, ctx.canvas.height/2 + 30)
+        ctx.fillStyle = '#32a832'
+        ctx.fillText(Math.cos(frameCount * 0.005).toFixed(2) + " + " + Math.sin(frameCount * 0.005).toFixed(2) + "i", ctx.canvas.width/2 + 300, ctx.canvas.height/2 - 30)
     }
     useEffect(() => {
         const canvas = canvasRef.current
