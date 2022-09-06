@@ -10,4 +10,9 @@
     border: 1px solid white;
     border-radius: 1rem;
     background-color: #0b0b0c;
+    
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
 }
