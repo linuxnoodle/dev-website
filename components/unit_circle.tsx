@@ -17,7 +17,7 @@ const UnitCircle = () => {
         // draw lines making a grid
         ctx.strokeStyle = '#326ba8'
         ctx.lineWidth = 1
-        for (let i = 0; i < 20; ++i) {
+        for (let i = 0; i < Math.round(ctx.canvas.width / 100) + 1; ++i) {
             ctx.beginPath()
             // yes, i did draw a positive and negative line so i don't have to worry about aligning with the center
             // no, i don't care
@@ -27,7 +27,7 @@ const UnitCircle = () => {
             ctx.lineTo(ctx.canvas.width / 2 - 50*i, ctx.canvas.height)
             ctx.stroke()
         }
-        for (let i = 0; i < 20; ++i) {
+        for (let i = 0; i < Math.round(ctx.canvas.height / 100) + 2; ++i) {
             ctx.beginPath()
             ctx.moveTo(0, ctx.canvas.height / 2 + 50*i)
             ctx.lineTo(ctx.canvas.width, ctx.canvas.height / 2 + 50*i)
