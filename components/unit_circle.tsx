@@ -73,7 +73,7 @@ const UnitCircle = () => {
         ctx.fillText('-i', ctx.canvas.width/2 - 30, ctx.canvas.height/2 + 290)
         ctx.fillText('-1', ctx.canvas.width/2 - 285, ctx.canvas.height/2 + 30)
         ctx.fillStyle = '#32a832'
-        ctx.fillText(norm_x.toFixed(2) + " + " + norm_y.toFixed(2) + "i", ctx.canvas.width/2 + 300, ctx.canvas.height/2 - 30)
+        ctx.fillText(norm_x.toFixed(2) + " + " + -norm_y.toFixed(2) + "i", ctx.canvas.width/2 + 300, ctx.canvas.height/2 - 30)
     }
     useEffect(() => {
         const canvas = canvasRef.current
