@@ -22,28 +22,20 @@
 
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: "Computer Modern", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    color: #cfcfcf;
+    background: #0c0c0f;
+    padding: 0;
+    margin: 0;
+    font-family: "Computer Modern", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 * {
-  box-sizing: border-box;
-  overflow:  hidden;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: #cfcfcf;
-    background: #0c0c0f;
-  }
+    box-sizing: border-box;
+    overflow:  hidden;
 }
